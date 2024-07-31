@@ -6,7 +6,7 @@ import Payment from './Components/Pages/Payment/Payment'
 import Order from './Components/Pages/Orders/Order'
 import Cart from './Components/Pages/Cart/Cart'
 
-const Routing = () => {
+function Routing ()  {
   return (
     <div>
       <Router>
@@ -32,4 +32,4 @@ const Routing = () => {
   )
 }
 
-export default Router
+export default Routing;

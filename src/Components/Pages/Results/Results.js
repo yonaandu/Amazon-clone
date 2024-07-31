@@ -1,11 +1,10 @@
 import React from 'react'
-import css from '../Results/Results.css'
+import '../Results/Results.css'
+
 
 const Results = () => {
   return (
-    <div>
-      
-    </div>
+   <div></div>
   )
 }
 

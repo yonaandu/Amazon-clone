@@ -1,11 +1,16 @@
 import React from 'react'
-import css from '../ProductDetail/ProductDetail.css'
+import  '../ProductDetail/ProductDetail.css'
+import Layout from '../../Layout/Layout'
 
 const ProductDetail = () => {
   return (
+    
+      <Layout>
     <div>
       
-    </div>
+      </div>
+  </Layout>
+    
   )
 }
 

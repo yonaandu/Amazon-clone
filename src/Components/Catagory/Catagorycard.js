@@ -1,5 +1,6 @@
 import React from 'react'
-import css from '../Catagory/Catagory.css'
+import  '../Catagory/Catagory.css'
+
 
 const Catagorycard = ({data}) => {
   return (

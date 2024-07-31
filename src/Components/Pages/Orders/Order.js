@@ -1,10 +1,14 @@
 import React from 'react'
-import css from '../Orders/Orders.css'
+import  '../Orders/Orders.css'
+import Layout from '../../Layout/Layout'
 const Order = () => {
   return (
+  <Layout>
     <div>
       
-    </div>
+      </div>
+  </Layout>
+    
   )
 }
 

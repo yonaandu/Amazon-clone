@@ -1,7 +1,7 @@
 import React from 'react'
 import {catagoryInfo} from './Catagoryinfo'
 import Catagorycard from './Catagorycard'
-import css from '../Catagory/Catagory.css'
+import  '../Catagory/Catagory.css'
 
 const Catagory = () => {
   return (
