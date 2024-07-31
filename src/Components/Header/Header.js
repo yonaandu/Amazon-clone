@@ -3,6 +3,7 @@ import css from '../Header/Header.css'
 import { CiLocationOn } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
+import LowerHeader from './LowerHeader';
 
 const Header = () => {
   return (
@@ -60,9 +61,9 @@ const Header = () => {
 
         </div>
       </div>
-
+      <LowerHeader/>
     </div>
-  )
+ )
 }
 
 export default Header
