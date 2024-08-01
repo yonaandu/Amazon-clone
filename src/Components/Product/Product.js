@@ -7,8 +7,9 @@
 import React, { useEffect, useState } from 'react';
 import  {getProducts}  from '../../../src/services/fakeStoreService';
 import ProductCard from './Productcard';
-import css from './Product.css'
-const Product = () => {
+import  './Product.css'
+
+function Product  () {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

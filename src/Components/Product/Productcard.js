@@ -3,16 +3,19 @@ import React from 'react'
 import Rating from '@mui/material/Rating';
 import CurrencyFormat from '../CurrencyFormat/CurrencyFormat';
 import Product from './Product';
+import { Link } from'react-router-dom';
 
-const Productcard = ({product}) => {
+function Productcard ({product}) {
   const{ image, title, id , rating, price}= Product;
   return (
     <div className='Card_container'>
-      <a href=''><img src={product.image} alt=''></img></a>
+
+      <Link to={`/products/${product.id}`}><img src={product.image} alt=''></img></Link>
+      
       <div>
         <h3>{product.title}</h3>
-      <div className='Rating'> {/*rating*/}
-      <Rating value={rating } precision={0.1}/>
+      <div className='Rating'> 
+      <Rating value={product.rating } precision={0.1}/>
       
       {/*count*/}
       <small>{rating}</small>
