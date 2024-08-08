@@ -1,0 +1,129 @@
+/* Main section styling */
+.section1 {
+  padding: 20px;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container for the main cart content */
+.div1 {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header text styling */
+.div1 h2,
+.div1 h3 {
+  margin: 0 0 10px 0;
+}
+
+/* Separator line */
+.div1 hr {
+  margin: 20px 0;
+}
+
+/* Product item container */
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Text and button container */
+.div2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button styling */
+.button1 {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1:hover {
+  background-color: rgb(94, 62, 3);
+}
+.button2 {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button2:hover {
+  background-color: rgb(94, 62, 3);
+}
+/* Item quantity */
+.div2 span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Subtotal container */
+.subtotal {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Subtotal text */
+.subtotal p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Checkout link */
+.subtotal a {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.subtotal a:hover {
+  background-color: #e50914;
+}
+
+/* Checkbox container */
+.subtotal span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.subtotal input[type="checkbox"] {
+  margin-right: 10px;
+}

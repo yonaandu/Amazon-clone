@@ -1,13 +1,21 @@
-import React from 'react';
+import React , {useContext} from 'react';
 import './Header.css'; // Ensure the path is correct
 import { Link } from 'react-router-dom';
 import { CiLocationOn } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import LowerHeader from './LowerHeader'; // Ensure the path is correct
+import { DataContext } from '../DataProvider/DataProvider';
 
 const Header = () => {
+  const { state, dispatch } = useContext(DataContext);
+  const { basket } = state;
+  const total = basket.reduce((amount, item) => {
+    return item.amount ;
+  }, 0);
+ 
   return (
+    <section className='Fixed'>
     <div className='headeroutercontainer'>
       <div className='headerinnercontainer'>
         <div className='headerleftcontainer'>
@@ -51,13 +59,14 @@ const Header = () => {
             </a>
             <Link to='/cart' className='rightrightcart'>
               <IoCartOutline size={35} />
-              <span>0</span>
+              <span>{total}</span>
             </Link>
           </div>
         </div>
       </div>
       <LowerHeader/>
     </div>
+    </section>
   );
 }
 
