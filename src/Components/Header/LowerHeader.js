@@ -3,16 +3,16 @@ import { MdOutlineMenu } from "react-icons/md";
 
 const LowerHeader = () => {
   return (
-    <div className='LowerHeadercontainer '>
-      <ul>
-        <li><MdOutlineMenu /><p>ALL</p></li>
-        <li>Today's deals</li>
-        <li>Costumer Service</li>
-        <li>Registry</li>
-        <li>Gift Cards</li>
-        <li>Sell </li>
-      </ul>
+    <div className='lowerHeaderContainer'>
+    <div className='lowerHeaderInner'>
+      <a href='/' className='navItem'>All</a>
+      <a href='/deals' className='navItem'>Today's Deals</a>
+      <a href='/customer-service' className='navItem'>Customer Service</a>
+      <a href='/registry' className='navItem'>Registry</a>
+      <a href='/gift-cards' className='navItem'>Gift Cards</a>
+      <a href='/sell' className='navItem'>Sell</a>
     </div>
+  </div>
   )
 }
 

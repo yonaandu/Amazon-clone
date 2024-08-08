@@ -5,8 +5,11 @@ import CurrencyFormat from '../CurrencyFormat/CurrencyFormat';
 import Product from './Product';
 import { Link } from'react-router-dom';
 
+
+
 function Productcard ({product}) {
-  const{ image, title, id , rating, price}= Product;
+  const { image, title, id, rating, price, description } = Product;
+  console.log(product);
   return (
     <div className='Card_container'>
 
@@ -14,11 +17,12 @@ function Productcard ({product}) {
       
       <div>
         <h3>{product.title}</h3>
+        rend
       <div className='Rating'> 
       <Rating value={product.rating } precision={0.1}/>
       
       {/*count*/}
-      <small>{rating}</small>
+      <small>{product.rating.count}</small>
       </div>
       <div>
       <CurrencyFormat amount={product.price}/>    
