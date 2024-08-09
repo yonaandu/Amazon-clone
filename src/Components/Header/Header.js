@@ -1,6 +1,7 @@
 import React , {useContext} from 'react';
 import './Header.css'; // Ensure the path is correct
 import { Link } from 'react-router-dom';
+
 import { CiLocationOn } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
