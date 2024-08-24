@@ -8,7 +8,9 @@ const Catagory = () => {
     <div>
       <section className='catgorycontainer'>
         {
-            catagoryInfo.map((infos)=>(<Catagorycard data={infos}/>))
+            catagoryInfo.map((infos, index) => (
+              <Catagorycard key={index} data={infos} />
+            ))
         }
       </section>
     </div>

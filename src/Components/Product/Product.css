@@ -48,3 +48,32 @@
 .products_container section {
   margin: 0 auto;
 }
+.Card_container {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.Card_container.clicked {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 16px; /* Highlighting when clicked */
+}
+.Product_description {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #555;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.Card_container.clicked .Product_description {
+  max-height: 100px; /* Adjust according to your content */
+  opacity: 1;
+}

@@ -1,38 +1,32 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Landing from './Components/Pages/Landing/Landing'
-import SignIn from './Components/Pages/Auth/Signup'
-import Payment from './Components/Pages/Payment/Payment'
-import Order from './Components/Pages/Orders/Order'
-import Cart from './Components/Pages/Cart/Cart'
-import Results from './Components/Pages/Results/Results'
-import ProductDetail from './Components/Pages/ProductDetail/ProductDetail'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Landing from './Components/Pages/Landing/Landing';
+import Auth from './Components/Pages/Auth/auth';
+import Payment from './Components/Payment/Payment';
+import Order from './Components/Pages/Orders/Order';
+import Cart from './Components/Pages/Cart/Cart';
+import Results from './Components/Pages/Results/Results';
+import ProductDetail from './Components/Pages/ProductDetail/ProductDetail';
+// import NotFound from './Components/Pages/NotFound/NotFound'; // Add a 404 page
 
-function Routing ()  {
+function Routing() {
   return (
     <div>
       <Router>
-         <Routes> 
-             
-            <Route path="/"  element={<Landing />} />
-            <Route path="/auth"  element={<SignIn />} />
-            <Route path="/payments" exact element={<Payment/>} />
-            <Route path="/orders" exact element={<Order />} />
-            <Route path="/cart" exact element={<Cart/>} />
-            
-            <Route path="/catagory/:catagoryName"  element={<Results />} />
-            <Route path="/products/:productId" exact element={<ProductDetail />} />
-            {/* <Route path="/login" exact element={<Login />} />
-            <Route path="/signup" exact element={<Signup />} />
-            <Route path="*" element={<NotFound />} /> */}
-         </Routes>
-  
+        <Routes>
+        <Route path="/" element={<Landing />} />
+<Route path="/products/:productId" element={<ProductDetail />} />
+<Route path="/catagory/:catagoryName" element={<Results />} />
+<Route path="/payments" element={<Payment />} />
+<Route path="/orders" element={<Order />} />
+<Route path="/cart" element={<Cart />} />
+<Route path="/auth" element={<Auth />} />
 
-    
-
+          {/* <Route path="*" element={<NotFound />} /> Catch-all route for 404 */}
+        </Routes>
       </Router>
     </div>
-  )
+  );
 }
 
 export default Routing;

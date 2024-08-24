@@ -1,0 +1,115 @@
+.payment {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f8f8f8;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paymentheader {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.payment-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.payment-address p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.payment-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-product-detail {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.payment-product-image {
+  width: 100px;
+  object-fit: contain;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-product-info {
+  flex: 1;
+}
+
+.payment-product-info h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #111;
+}
+
+.product-detail-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.button2 {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+  background-color: #ddb347;
+}
+
+.payment-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.payment-button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-button:hover {
+  background-color: #ddb347;
+}
+
+.payment-title h3,
+.payment-address p,
+.payment-product-info h3,
+.payment-product-info p,
+.payment-details p {
+  font-family: "Arial", sans-serif;
+}

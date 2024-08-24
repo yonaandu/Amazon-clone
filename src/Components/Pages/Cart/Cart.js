@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+
 import  Layout  from '../../Layout/Layout';
 import { DataContext } from '../../DataProvider/DataProvider';
 import Productcard from '../../Product/Productcard';
@@ -6,6 +7,7 @@ import CurrencyFormat from '../../CurrencyFormat/CurrencyFormat';
 import { Link } from 'react-router-dom';
 import '../Cart/Cart.css'
 import { IoIosArrowDown } from "react-icons/io";
+
 
 
 import { Type } from '../../Utility/action.type'; 
@@ -75,7 +77,7 @@ const total = basket.reduce((amount, item) => {
               
            
             </span>
-            <Link to="/Payment">Continue to checkout</Link>
+            <Link to="/payments">Continue to checkout</Link>
           </div>
         )}
       </section>

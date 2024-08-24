@@ -1,0 +1,90 @@
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #e2e2e2,
+    #ffffff
+  ); /* Light gradient background */
+  padding: 20px;
+}
+
+.auth-wrapper img {
+  width: 200px; /* Wider logo */
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+form {
+  background: white; /* White background for the form */
+  padding: 30px; /* Increased padding */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+  width: 400px; /* Wider form */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+form:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Shadow on hover for effect */
+}
+
+input {
+  width: 100%; /* Full width inputs */
+  padding: 12px; /* Padding inside inputs */
+  margin: 12px 0; /* Space between inputs */
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Font size for input text */
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+input:focus {
+  border-color: #007185; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 113, 204, 0.5); /* Subtle glow on focus */
+}
+
+button {
+  background: linear-gradient(
+    90deg,
+    #ff9900,
+    #f0c14b
+  ); /* Gradient background */
+  border: none; /* No border */
+  color: white; /* White text color */
+  padding: 12px; /* Padding for the button */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%; /* Full width button */
+  font-size: 16px; /* Font size for button text */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+  background: linear-gradient(
+    90deg,
+    #f0c14b,
+    #ff9900
+  ); /* Reverse gradient on hover */
+}
+
+p {
+  margin: 12px 0; /* Space above and below paragraphs */
+  font-size: 14px; /* Slightly larger text */
+}
+
+span {
+  color: #007185; /* Amazon link color */
+  cursor: pointer; /* Pointer cursor for clickable text */
+}
+
+span:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #005f7f; /* Darker color on hover */
+}
+a {
+  color: #007185; /* Amazon link color */
+  text-decoration: none; /* No underline */
+}

@@ -1,9 +1,7 @@
-/* Header.css */
-
 /* General Styles */
 .headeroutercontainer {
   width: 100%;
-  background-color: #131921;
+  background-color: #131a22;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 
@@ -26,14 +24,15 @@
 }
 
 .headerleftimage img {
-  width: 80px;
+  width: 100px;
   cursor: pointer;
 }
 
 .locationlogo {
   color: #fff;
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .headerleft {
@@ -59,17 +58,18 @@
 }
 
 .headerleftmiddle select {
-  height: 32px;
+  height: 36px;
   border: none;
   padding: 0 10px;
-  background-color: #f3f3f3;
+  background-color: #e7e9ec;
 }
 
 .headermiddlecontainer input {
   width: 100%;
-  height: 32px;
-  border: none;
+  height: 36px;
+  border: 1px solid #d5d9d9;
   padding: 0 10px;
+  border-radius: 4px;
 }
 
 .headerrightmiddle {
@@ -78,7 +78,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 32px;
+  height: 36px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
 /* Right Container */
@@ -91,7 +93,7 @@
 .headerleftright {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .headerleftright img {
@@ -151,7 +153,7 @@
 
 .rightrightcart span {
   position: absolute;
-  top: -10px;
+  top: -8px;
   right: -10px;
   background-color: #f08804;
   color: #fff;
@@ -159,14 +161,12 @@
   padding: 2px 6px;
   font-size: 12px;
 }
-/* LowerHeader.css */
-
 .lowerHeaderContainer {
   width: 100%;
   background-color: #232f3e;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .lowerHeaderInner {
@@ -192,8 +192,25 @@
 .navItem:hover {
   color: #febd69;
 }
+
 .Fixed {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+.headeroutercontainer .headermiddleright button {
+  background-color: transparent;
+  border: none;
+  color: #007185; /* Change this color to fit your theme */
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size */
+  padding: 5px 8px; /* Reduced padding */
+  margin-left: 10px; /* Add some spacing from the username */
+  border-radius: 3px; /* Rounded corners for a softer look */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.headeroutercontainer .headermiddleright button:hover {
+  text-decoration: underline;
+  background-color: rgba(0, 113, 133, 0.1); /* Light background on hover */
 }
